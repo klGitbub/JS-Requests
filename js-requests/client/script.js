@@ -131,7 +131,12 @@ const repeatMyParam = () => {
 */
 
 // CODE HERE
-axios.get('http://localhost:3000/query-test')
+axios.get('http://localhost:3000/query-test', {
+    params: {
+        ID: 'kevin'
+    }
+}
+)
 .then(({ data }) => console.log(data))
 
 
